@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    --font-heading: 'Poppins', sans-serif;
+    --font-body:'Open Sans', sans-serif;
+}
+body{
+    height: 100%;
+    padding: 0 6%;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-body);
+    background: url('./images/bg-mobile.svg') var(--Violet);
+    background-repeat: no-repeat;
+    position: relative;
+}
+header{
+    width: 100%;
+}
+header > img{
+    width: 44%;
+    padding-top: 3%;
+    margin-top: 6%;
+}
+.mockup{
+    max-width: 100%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+main > h2{
+    font-family: var(--font-heading);
+    color: white;
+    text-align: center;
+    line-height: 1.7;
+    font-weight: 600;
+    margin: 0;
+}
+main > p {
+    font-family: var(--font-body);
+    text-align: center;
+    color: white;
+    padding: 0 2%;
+    line-height: 1.8;
+}
+button{
+    outline: none;
+    background-color: white;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    font-family: var(--font-heading);
+    color: var(--Violet);
+    font-weight: 400;
+    font-size: 0.85em;
+    width: 65%;
+    border-radius: 10rem;
+    padding: 3%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    box-shadow: 0 0.7em 1em -0.4em rgb(0, 0, 0 ,0.5)
+}
+button:hover{
+    background-color: var(--Soft-Magenta);
+    cursor: pointer;
+    color: white;
+}
+.social{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20%;
+}
+.icon{
+    border: 1.9px solid white;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+.icon:hover{
+    border: 1.9px solid #d85fe6;
+
+}
+.icon:hover > *{
+    color: #d85fe6;
+}
+.icon > i {
+    color: white;
+}
+.icon:nth-child(2){
+    margin: 0 4%
+}
+@media (min-width:43.75em){
+    body{
+        padding: 2% 5%;
+    }
+
+    body{
+        background: url('./images/bg-desktop.svg') var(--Violet);
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        height: 100vh;
+    }
+    header > img{
+        width: 19%;
+        padding-top: 3%;
+        margin: 0;
+    }
+    .mockup{
+        width: 55%;
+        margin: 8% 0;
+    }
+    main{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 4%;
+    }
+    .main-container{
+        display: flex;
+    }
+    main > h2{
+
+        text-align: left;
+        font-weight: 600;
+        font-size: 2em;
+        padding-right: 20%;
+    }
+    main > p {
+        font-family: var(--font-body);
+        text-align: left;
+        color: white;
+        line-height: 1.7;
+        padding-right: 1%;
+        margin-bottom: 0;
+
+    }
+    button{
+        display: block;
+        margin: 0 0;
+        font-family: var(--font-heading);
+        color: var(--Violet);
+        font-weight: 400;
+        font-size: 0.85em;
+        width: 35%;
+        margin-top: 2%;
+
+
+    }
+    .social{
+        text-align: center;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        padding-bottom: 0;
+        position: absolute;
+        bottom: 4%;
+        right: 4%;
+        width: 100%;
+    }
+
+    .icon:nth-child(2){
+        margin: 0 0.8%
+    }
+    .icon{
+        width: 2.1em;
+        height: 2.1em;
+    }
+
+}
